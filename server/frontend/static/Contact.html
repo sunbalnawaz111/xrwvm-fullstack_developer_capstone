@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Dealerships</title>
+    <!-- Stylesheet links -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body style="background-color: #f8f9fa;">
+  <!-- Navigation Bar with Contact Us Active -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; min-height: 70px;">
+    <div class="container-fluid">
+      <h2 style="margin-right: 30px;">Dealerships</h2>
+      <div class="collapse navbar-collapse show" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger; font-weight: bold;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Information Container -->
+  <div class="container my-5">
+    <div class="card shadow-sm p-4">
+      <div class="banner mb-4" name="contact-header">
+        <h1 class="display-5 font-weight-bold">Contact Us</h1>
+        <p class="lead text-muted">
+          We would love to hear from you. Get in touch with our sales, finance, or customer service teams.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Details Card -->
+        <div class="col-md-6">
+          <div class="card h-100 p-3 border-0 bg-light">
+            <h4 class="font-weight-bold text-dark mb-3">Headquarters & Showroom</h4>
+            <p class="mb-2"><strong>Address:</strong> 1200 Motor Parkway, Suite 400, Chicago, IL 60601</p>
+            <p class="mb-2"><strong>Phone (Toll-Free):</strong> +1 (800) 555-CARS (2277)</p>
+            <p class="mb-2"><strong>Support Email:</strong> contact@bestcarsdealership.com</p>
+            <p class="mb-2"><strong>Sales Inquiries:</strong> sales@bestcarsdealership.com</p>
+            <hr>
+            <h5 class="font-weight-bold text-dark mt-2">Hours of Operation</h5>
+            <ul class="list-unstyled text-muted mb-0">
+              <li><strong>Monday – Friday:</strong> 8:30 AM – 8:00 PM EST</li>
+              <li><strong>Saturday:</strong> 9:00 AM – 6:00 PM EST</li>
+              <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Direct Contact Form Preview -->
+        <div class="col-md-6">
+          <div class="card h-100 p-3 border-0 bg-light">
+            <h4 class="font-weight-bold text-dark mb-3">Send a Message</h4>
+            <div class="mb-3">
+              <label class="form-label font-weight-bold">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your full name" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label font-weight-bold">Email Address</label>
+              <input type="email" class="form-control" placeholder="name@example.com" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label font-weight-bold">Message</label>
+              <textarea class="form-control" rows="3" placeholder="Tell us how we can help you..." readonly></textarea>
+            </div>
+            <button class="btn btn-info text-white font-weight-bold" type="button" style="background-color: darkturquoise; border: none;">Submit Inquiry</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
