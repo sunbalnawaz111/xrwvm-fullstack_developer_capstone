@@ -141,13 +141,12 @@ def get_dealer_reviews(request, dealer_id):
 # def add_review(request):
 @csrf_exempt
 def add_review(request):
-    if not request.user.is_anonymous:
-        data = json.loads(request.body)
+    if request.method == "POST":
         try:
+            data = json.loads(request.body)
             response = post_review(data)
-            return JsonResponse({"status": 200})
-        except Exception:
-            return JsonResponse({"status": 401, "message": "Error in posting review"})
-    else:
-        return JsonResponse({"status": 403, "message": "Unauthorized"})
+            return JsonResponse({"status": 200, "response": response})
+        except Exception as e:
+            return JsonResponse({"status": 401, "message": f"Error in posting review: {str(e)}"})
+    return JsonResponse({"status": 400, "message": "Invalid request method"})
 # ...
